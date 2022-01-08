@@ -4,27 +4,18 @@
 
 A simple snippets extension for the [nextcord](https://nextcord.readthedocs.io/en/latest/index.html 'Nextcord Documentation') package for [python](https://www.python.org 'python.org')
 
-## Features
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=Auxtal.nextcord-snippets">
+    <img alt="VS Code Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/Auxtal.nextcord-snippets">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=Auxtal.nextcord-snippets">
+    <img alt="VS Code Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/Auxtal.nextcord-snippets">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=Auxtal.nextcord-snippets#review-details">
+    <img alt="VS Code Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/r/Auxtal.nextcord-snippets">
+  </a>
 
-### Making a cog
-
-![Cog Example](https://i.imgur.com/gIWNM5E.gif)
-
-### Making a command
-
-![Command Example](https://will-be-a-virgin-for.life/raw/AD9vhDaTq9rUc7.gif)
-
-### Starter Template
-
-![Starter Example](https://lunarsense.club/raw/vMjn5FFNe8tefZ.gif)
-
-### Making a event
-
-![Event Example](https://somekidspace.xyz/raw/rQTvVhLmxkAlYh.gif)
-
-### Using the library aiohttp to use a api in a command
-
-![AioHTTP Example](https://i.imgur.com/LVZVq33.gif)
+</p>
 
 <!-- ## Extension Settings
 
@@ -171,5 +162,19 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 ### 1.5.1
 
 - Added a `on_ready` event in the `!dpstrt` snippet
+
+### 1.5.2
+
+- Migrated from discord.py snippets to nextcord snippets
+- Updated icon.png to nextcord logo
+
+### 1.5.3
+
+- Removed example GIFS (May add back in future)
+
+### 1.5.4
+
+- Updated License
+- Updated README
 
 **Enjoy!**

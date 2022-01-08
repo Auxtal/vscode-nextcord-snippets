@@ -66,3 +66,17 @@ All notable changes to the "nextcord-snippets" extension will be documented in t
 ### [1.5.1]
 
 - Added a `on_ready` event in the `!dpstrt` snippet
+
+### [1.5.2]
+
+- Migrated from discord.py snippets to nextcord snippets
+- Updated icon.png to nextcord logo
+
+### [1.5.3]
+
+- Removed example GIFS (May add back in future)
+
+### [1.5.4]
+
+- Updated License
+- Updated README
