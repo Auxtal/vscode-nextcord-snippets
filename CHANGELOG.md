@@ -1,10 +1,10 @@
 # Change Log
 
-All notable changes to the "discord-py-snippets" extension will be documented in this file.
+All notable changes to the "nextcord-snippets" extension will be documented in this file.
 
 ## [1.0.0]
 
-- Initial release of discord.py-snippets extension
+- Initial release of nextcord-snippets extension
 
 ## [1.0.1]
 

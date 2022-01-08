@@ -1,9 +1,9 @@
 {
-    "discord.py Starter Template": {
-        "prefix": "!dpstrt",
+    "Nextcord Starter Template": {
+        "prefix": "!nxtstrt",
         "body": [
-            "import discord",
-            "from discord.ext import commands",
+            "import nextcord",
+            "from nextcord.ext import commands",
             "",
             "",
             "bot = commands.Bot(command_prefix=\"${1:!}\")",
@@ -21,9 +21,9 @@
             "bot.run(\"${2:Token}\")",
             ""
         ],
-        "description": "A starter template"
+        "description": "A nextcord starter template"
     },
-    "discord.py Basic Command Template": {
+    "Nextcord Basic Command Template": {
         "prefix": "!cmd",
         "body": [
             "@${1|bot,client|}.command(${2:aliases=[\"$3\"]})",
@@ -32,7 +32,7 @@
         ],
         "description": "A basic command template (Not for cogs)"
     },
-    "discord.py Not Shadowing Command Template": {
+    "Nextcord Not Shadowing Command Template": {
         "prefix": "!unscmd",
         "body": [
             "@${1|bot,client|}.command(name=\"${2:command_name}\"${3:, aliases=[\"$4\"]})",
@@ -41,7 +41,7 @@
         ],
         "description": "A basic command template that doesn't shadow another function (Not for cogs)"
     },
-    "discord.py Basic Event Template": {
+    "Nextcord Basic Event Template": {
         "prefix": "!evt",
         "body": [
             "@${1|bot,client|}.event",
@@ -50,7 +50,7 @@
         ],
         "description": "A basic event template (Not for cogs)"
     },
-    "discord.py Cog Command Template": {
+    "Nextcord Cog Command Template": {
         "prefix": "!cgcmd",
         "body": [
             "@commands.command(${1:aliases=[\"$2\"]})",
@@ -59,7 +59,7 @@
         ],
         "description": "A basic command template for cogs"
     },
-    "discord.py Cog Not Shadowing Command Template": {
+    "Nextcord Cog Not Shadowing Command Template": {
         "prefix": "!cgunscmd",
         "body": [
             "@commands.command(name=\"${1:command_name}\"${2:, aliases=[\"$3\"]})",
@@ -68,7 +68,7 @@
         ],
         "description": "A basic command template that doesn't shadow another function for cogs"
     },
-    "discord.py Cog Event Template": {
+    "Nextcord Cog Event Template": {
         "prefix": "!cgevt",
         "body": [
             "@commands.Cog.listener()",
@@ -77,11 +77,11 @@
         ],
         "description": "A basic event template for cogs"
     },
-    "discord.py Cog Template": {
+    "Nextcord Cog Template": {
         "prefix": "!cog",
         "body": [
-            "import discord",
-            "from discord.ext import commands",
+            "import nextcord",
+            "from nextcord.ext import commands",
             "",
             "",
             "class ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}(commands.Cog):",
@@ -96,7 +96,7 @@
         ],
         "description": "A starter template for a cog"
     },
-    "discord.py Group Template": {
+    "Nextcord Group Template": {
         "prefix": "!grp",
         "body": [
             "@${1|bot,client,commands|}.group(invoke_without_subcommnads=True${3:, aliases=[\"$4\"]})",
@@ -115,7 +115,7 @@
         ],
         "description": "A group template"
     },
-    "discord.py Group Command Template": {
+    "Nextcord Group Command Template": {
         "prefix": "!grpcmd",
         "body": [
             "@${1:group_name}.command(name=\"${2:subcommand_name}\"${3:, aliases=[\"$4\"]})",
@@ -133,7 +133,7 @@
         ],
         "description": "You need to have bot.session defined as a instance of aiohttp.ClientSession"
     },
-    "discord.py Global Check Template": {
+    "Nextcord Global Check Template": {
         "prefix": "!gbchk",
         "body": [
             "@${1|bot,client|}.check",
@@ -142,7 +142,7 @@
         ],
         "description": "A basic global check template"
     },
-    "discord.py Cog Check Template": {
+    "Nextcord Cog Check Template": {
         "prefix": "!cgchk",
         "body": [
             "async def cog_check(self, ctx):",
@@ -154,83 +154,83 @@
         ],
         "description": "A basic cog check template"
     },
-    "discord.py Embed Help": {
+    "Nextcord Embed Help": {
         "prefix": "!embedhelp",
         "body": [
             "class ${1:MyNew}Help(commands.MinimalHelpCommand):",
             "   async def send_pages(self):",
             "       destination = self.get_destination()",
             "       for page in self.paginator.pages:",
-            "           embed = discord.Embed(description=page)",
+            "           embed = nextcord.Embed(description=page)",
             "           await destination.send(embed=embed)"
         ],
         "description": "A custom help command implementation that modifies the default help and uses embed"
     },
-    "discord.py Embed Template": {
+    "Nextcord Embed Template": {
         "prefix": "!emb",
         "body": [
-            "embed = discord.Embed(${1:title=\"$2\",} ${3:description=\"$4\",} ${5:color=$6,} ${7:timestamp=$8,})"
+            "embed = nextcord.Embed(${1:title=\"$2\",} ${3:description=\"$4\",} ${5:color=$6,} ${7:timestamp=$8,})"
         ],
         "description": "Makes a Embed"
     },
-    "discord.py Embed Field Template": {
+    "Nextcord Embed Field Template": {
         "prefix": "!embfield",
         "body": [
             "${1:embed}.add_field(name=\"$2\", value=\"$3\", inline=${4|True,False|})"
         ],
         "description": "Adds a field to a embed"
     },
-    "discord.py Embed Footer Template": {
+    "Nextcord Embed Footer Template": {
         "prefix": "!embfoot",
         "body": [
             "${1:embed}.set_footer(text=\"$2\", ${3:icon_url=\"${4}\"})"
         ],
         "description": "Adds a footer to a embed"
     },
-    "discord.py Embed Author Template": {
+    "Nextcord Embed Author Template": {
         "prefix": "!embauthor",
         "body": [
             "${1:embed}.set_author(name=\"$2\", ${3:url=\"${4}\",} ${5:icon_url=\"${6}\"})"
         ],
         "description": "Adds a author to a embed"
     },
-    "discord.py Embed Thumbnail Template": {
+    "Nextcord Embed Thumbnail Template": {
         "prefix": "!embthumb",
         "body": [
             "${1:embed}.set_thumbnail(url=\"$2\")"
         ]
     },
-    "discord.py Embed Image Template": {
+    "Nextcord Embed Image Template": {
         "prefix": "!embimg",
         "body": [
             "${1:embed}.set_image(url=\"$2\")"
         ]
     },
-    "discord.py Owner Only check template": {
+    "Nextcord Owner Only check template": {
         "prefix": "!owneronly",
         "body": [
             "@commands.is_owner()"
         ]
     },
-    "discord.py NSFW Only check template": {
+    "Nextcord NSFW Only check template": {
         "prefix": "!nsfwonly",
         "body": [
             "@commands.is_nsfw()"
         ]
     },
-    "discord.py Cooldown decorator template": {
+    "Nextcord Cooldown decorator template": {
         "prefix": "!cooldown",
         "body": [
             "@commands.cooldown(${1:rate}, ${2:per}, commands.BucketType.${4|user,default,channel,member,guild,category,role|})"
         ]
     },
-    "discord.py has_permissions template": {
+    "Nextcord has_permissions template": {
         "prefix": "!hasperms",
         "body": [
             "@commands.has_permissions(${1:permission_name}=True)"
         ]
     },
-    "discord.py wait_for template for on_reaction_add": {
+    "Nextcord wait_for template for on_reaction_add": {
         "prefix": "!waitforreaction",
         "body": [
             "try:",
@@ -241,8 +241,7 @@
             "    $0"
         ]
     },
-
-    "discord.py wait_for template for on_message": {
+    "Nextcord wait_for template for on_message": {
         "prefix": "!waitformessage",
         "body": [
             "try:",
@@ -253,8 +252,7 @@
             "    $0"
         ]
     },
-
-    "discord.py Exception":{
+    "Nextcord Exception":{
 		"prefix": "!except",
 		"body": [
 			"class ${1:My}Error(${2:CommandError}):",
@@ -264,23 +262,20 @@
 		],
         "description": "Add a basic exception."
 	},
-
-	"discord.py UI Button":{
+	"Nextcord UI Button":{
 		"prefix": "!button",
 		"body": [
-			"class ${1:My}Button(discord.ui.Button):",
+			"class ${1:My}Button(nextcord.ui.Button):",
 			"",
-			"    async def callback(self, interaction: discord.Interaction):",
+			"    async def callback(self, interaction: nextcord.Interaction):",
 			"        ${2:return await super().callback(interaction)}"
 		],
         "description": "Add a basic button."
 	},
-
-
-    "discord.py Custom UI Button":{
+    "Nextcord Custom UI Button":{
 		"prefix": "!cbutton",
 		"body": [
-			"class ${1:My}Button(discord.ui.Button):",
+			"class ${1:My}Button(nextcord.ui.Button):",
 			"",
             "    def __init__(self, *, style: ButtonStyle = ..., label: Optional[str] = None,",
             "                disabled: bool = False, custom_id: Optional[str] = None,",
@@ -289,23 +284,20 @@
             "        super().__init__(style=style, label=label, disabled=disabled,",
             "                        custom_id=custom_id, url=url, emoji=emoji, row=row, $2=$2)",
             "",
-			"    async def callback(self, interaction: discord.Interaction):",
+			"    async def callback(self, interaction: nextcord.Interaction):",
 			"        ${4:return await super().callback(interaction)}",
 			"        $0"
 		],
         "description": "Add a button with a custom constructor.."
 	},
-
-	"discord.py UI Select":{
+	"Nextcord UI Select":{
 		"prefix": "!select",
 		"body": [
-			"class ${1:My}Select(discord.ui.Select):",
+			"class ${1:My}Select(nextcord.ui.Select):",
 			"",
-			"   async def callback(self, interaction: discord.Interaction):",
+			"   async def callback(self, interaction: nextcord.Interaction):",
 			"       ${2:return await super().callback(interaction)}"
 		],
         "description": "Add a basic select."
 	},
-
 }
-
