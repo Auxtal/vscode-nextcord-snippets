@@ -2,7 +2,7 @@
     "name": "nextcord-snippets",
     "displayName": "Nextcord Code Snippets",
     "description": "Code snippets for the Nextcord package in python",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "publisher": "Auxtal",
     "repository": {
         "type": "git",
